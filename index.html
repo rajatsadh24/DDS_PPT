@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script src='https://public.tableau.com/javascripts/api/v8/tableau-2.min.js'></script>
+  </head>
+  <body>
+    <div id='tableauStory'></div>
+    <script type='text/javascript'>
+      var placeholderDiv = document.getElementById('tableauStory');
+      var url = 'https://public.tableau.com/app/profile/rajat.sadh/viz/RecordsLost_16759676563010/story?publish=yes;
+      var options = {
+        hideTabs: true,
+        onFirstInteractive: function() {
+          console.log('Tableau Story has loaded.');
+        }
+      };
+      var viz = new tableau.Viz(placeholderDiv, url, options);
+    </script>
+  </body>
+</html>
